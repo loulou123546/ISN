@@ -11,14 +11,15 @@
 
 ## Liens utiles
 
-[nomnoml pour faire des diagrammes](http://nomnoml.com/)
-[w3.css pour faire du beau CSS](https://www.w3schools.com/w3css/w3css_templates.asp)
-[le discord officiel](https://discord.gg/yB928Kc)
-[Node.js site officiel](https://nodejs.org/en/)
-[Node.js documentation devdocs.io](https://devdocs.io/node/)
-[Doc technique MDN (FR)](https://developer.mozilla.org/fr/docs/Web/Reference)
+[nomnoml pour faire des diagrammes](http://nomnoml.com/)  
+[w3.css pour faire du beau CSS](https://www.w3schools.com/w3css/w3css_templates.asp)  
+[le discord officiel](https://discord.gg/yB928Kc)  
+[Node.js site officiel](https://nodejs.org/en/)  
+[Node.js documentation devdocs.io](https://devdocs.io/node/)  
+[Doc technique MDN (FR)](https://developer.mozilla.org/fr/docs/Web/Reference)  
 
 ---
 
-[Site perso : loulou123546.fr](https://loulou123546.fr/)
-[Site modèle / exemple](https://cta.loulou123546.fr/)
+[Site perso : loulou123546.fr](https://loulou123546.fr/)  
+[Site modèle / exemple](https://cta.loulou123546.fr/)  
+  
