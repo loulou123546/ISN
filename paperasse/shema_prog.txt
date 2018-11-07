@@ -1,20 +1,37 @@
 #direction: right
+
+[<note>Variables|
+[Interventions : array]-/-[Vehicules : array]
+[Vehicules : array]-/-[Paths : array]
+[Time : float (ms)]-/-[Radios : array]
+]
+
 [update()|executed every frame]
 
-[start()|run once when browser start]->[init()|spawn trucks, map, ...]
+[start()|run once when browser start|spawn trucks, map, ...]
 
-[update()]->[move_trucks()|move sprites]
+[update()]->[move_trucks()|move sprites, update time]
+[move_trucks()]->[find_path()|algorithm who search fatest path]
 
-[click()|event manager, check where is click and do some action]
+[click()|event manager,check where
+is click and do some action]
 
-[click()]-[menu|[open_panel()]
-[close_panel()]]
+[click()]-[menu|
+[open_panel()]
+[close_panel()]
+]
+
 [menu]-[truck|
-[truck.move(x,y)]
-[truck.set(key, value)]]
+[x : float]-/-[y : float]
+[type : string]-/-[ID : bool]
+[.move(x,y) : void]-/-[hidden : bool]
+[.set(key, value) : void]-/-[.get(key) : value]
+]
+
 [truck]-[intervention|
-[inter.set(key, value)]
-[inter.accept()]
-[inter.defer()]
-[inter.transmit()]
-[inter.close()]]
+[x : float]-/-[y : float]
+[type : string]-/-[ID : bool]
+[.set(key, value) : void]-/-[.get(key) : value]
+[.accept() : void]-/-[.defer() : void]
+[.transmit() : void]-/-[.close() : void]
+]
