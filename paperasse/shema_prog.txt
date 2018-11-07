@@ -1,0 +1,20 @@
+#direction: right
+[update()|executed every frame]
+
+[start()|run once when browser start]->[init()|spawn trucks, map, ...]
+
+[update()]->[move_trucks()|move sprites]
+
+[click()|event manager, check where is click and do some action]
+
+[click()]-[menu|[open_panel()]
+[close_panel()]]
+[menu]-[truck|
+[truck.move(x,y)]
+[truck.set(key, value)]]
+[truck]-[intervention|
+[inter.set(key, value)]
+[inter.accept()]
+[inter.defer()]
+[inter.transmit()]
+[inter.close()]]
