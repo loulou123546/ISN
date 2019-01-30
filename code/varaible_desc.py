@@ -26,7 +26,7 @@ Global Joueur_XP = 0
 ## Classe 'vehicles'
 
 class vehicles :
-  "vehicules de la caserne"
+  "vehicules du poste de secours"
   
   def __init__(self, ID, typ, name):
     # (int) ID - (string) typ - (string) name 
@@ -43,6 +43,8 @@ class vehicles :
   
   def move (self, x, y): # déplace le vehicule en fonction des coordonnees x et y
     ## (float) x, y
+    
+  def update_move (self): ## est appellé par update pour bouger le véhicule SSI il est en mouvement
     
 
 
@@ -91,6 +93,8 @@ class intervention :
     def defer(self):  # remettre a plus tard une intervention
       
     def close(self): # fini l'intervention ou l'annule 
+      
+    def update_inter (self): ## est appellé par update pouractualiser le timer et tout
 
 
       
@@ -109,7 +113,7 @@ class chemin :
       
       
       
-############ FONCTIONS GLOBALES #########
+############# FONCTIONS GLOBALES #############
 
 def find_paths (x1, x2, y1, y2) : # Trouve le chemin le plus court pour aller du couple (x1;y1) au couple (x2;y2) 
   # (float) x1, x2, y1, y2 
@@ -122,8 +126,26 @@ def find_next_path (x, y) : ### Trouve dans le tableau généré par 'find_paths
 def update (DT) : # bouge les vehicules (raffraichit leur position) et actualise les timers des interventions en fonction de DT 
   ##DeltaTime = DT (float) : temps en millisecondes depuis la dernière update
   
+  ## Job : s'occuper de l'affichage
+  ##
+  ##      - appeler 'update' régulièrement
+  ##      - appeler pour chaque vhc 'update_move'
+  ##      - appeler pour chaque inter 'update_inter'
+  
+  
+  
 def generate_intervention () : ### génère un objet de type 'intervention' aléatoirement
   return ## retourne un objet de type 'intervention'
 
+
+############# MAIN #############
+
+def main () :
+  ## Job : gérer les taches de fond et les interactions utilisateurs
+  ##
+  ##      - charger les scripts et les images
+  ##      - appeler 'update' régulièrement
+  ##      - gérer la map, les click souris, les événements interne et externe
+  ##      - créer les interventions réguliérement
   
 #################################### END ####################################
