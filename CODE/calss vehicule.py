@@ -21,7 +21,7 @@ class vehicles :
     ## (float) x, y
 
 DEPANNEUSE_1 = vehicles(001, 'camion accidents', 'depanneuse_1', 'SERVICE', ['AVP','DIV'], 'depanneuse1.png')
-DEPANNEUSE_2 = vehicles(002, 'camion accidents', 'depanneuse_2', 'SERVICE', ['AVP','DIV'], 'depanneuse2.png' )'
+DEPANNEUSE_2 = vehicles(002, 'camion accidents', 'depanneuse_2', 'SERVICE', ['AVP','DIV'], 'depanneuse2.png' )
 PATROUILLEUR = vehicles(003, 'camionette balisage', 'patrouilleur', 'SERVICE', ['DIV'], 'patrouilleur2.png')
 UMH = vehicles(004, 'ambulance', 'UMH', 'SAMU', ['SAP'], 'UMH1.png')
 VSAV_1 = vehicles(005, 'ambulance', 'VSAV_1', 'POMPIER', ['SAP'], 'VSAV1.png')
